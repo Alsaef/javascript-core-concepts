@@ -7,6 +7,7 @@ A beginner-friendly repository for understanding important JavaScript concepts s
 - Global Scope
 - Local / Functional Scope
 - Block Scope
+- Closuer
 - Difference between `var`, `let`, and `const`
 
 ---
@@ -103,6 +104,47 @@ ReferenceError: b is not defined
 
 - `a` is declared with `var`, so it can be accessed outside the block
 - `b` is declared with `let`, so it can only be accessed inside the block
+
+---
+
+# 🔁 JavaScript Closure
+
+In JavaScript:
+
+- A closure is a function along with its lexical scope. It allows an inner function to access variables from the outer function even after the outer function has finished executing.
+
+```js
+// it can be accessible to the inner function
+var num1 = 10;
+
+function sum() {
+    // closure example
+    var num2 = 20;
+
+    return function () {
+        return num1 + num2;
+    };
+}
+
+// function calling inner or outer
+var add = sum();
+
+console.log(add());
+console.dir(add);
+```
+
+### ✅ Output
+
+```js
+30
+```
+### 📌 Explanation
+
+- `num1` is a global variable
+- `num2` is a local variable inside the `sum()` function
+- The inner function can still access both `num1` and `num2`
+- Even after the `sum()` function finishes execution, the inner function remembers its lexical scope
+- This behavior is called a `closure` in JavaScript
 
 ---
 
