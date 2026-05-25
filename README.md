@@ -8,6 +8,7 @@ A beginner-friendly repository for understanding important JavaScript concepts s
 - Local / Functional Scope
 - Block Scope
 - Closuer
+- Optional Chaining
 - Difference between `var`, `let`, and `const`
 
 ---
