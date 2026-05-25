@@ -148,6 +148,47 @@ console.dir(add);
 
 ---
 
+# 🔗 JavaScript Optional Chaining
+
+Optional Chaining (`?.`) is a powerful feature in JavaScript that allows developers to safely access nested object properties without causing runtime errors.
+
+```js
+// optional chaining is a massive feature in javascript
+const user = {
+    name: "ratul",
+    // address: {
+    //     city: "Dhaka",
+    //     country: "Bangladesh"
+    // }
+};
+
+console.log(user?.address?.city)
+```
+
+### ✅ Output
+
+```js
+undefined
+```
+
+### 📌 Explanation
+
+- The `user` object does not contain an `address` property
+- Normally, accessing `user.address.city` would cause an error
+- But with optional chaining (`?.`), JavaScript safely returns `undefined`
+- It prevents the application from crashing when a property does not exist
+
+---
+
+# 🚀 Benefits of Optional Chaining
+
+- Safer property access
+- Cleaner and shorter code
+- Prevents runtime errors
+- Very useful for API responses and nested objects
+
+---
+
 # 🚀 Technologies Used
 
 - JavaScript
