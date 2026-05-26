@@ -9,6 +9,7 @@ A beginner-friendly repository for understanding important JavaScript concepts s
 - Block Scope
 - Closuer
 - Optional Chaining
+- Array Filter Methord
 - Difference between `var`, `let`, and `const`
 
 ---
@@ -187,6 +188,50 @@ undefined
 - Cleaner and shorter code
 - Prevents runtime errors
 - Very useful for API responses and nested objects
+
+---
+
+# 🎯 JavaScript Filter Method
+
+The `filter()` method in JavaScript is used to create a new array containing elements that match a specific condition.
+
+```js
+// filter method in javascript
+
+const numbers = [1,2,3,4,5,6,7,8];
+
+// filter method create
+const evenNumbers = numbers.filter((num) => {
+   return num % 2 === 0;
+});
+
+// print even numbers
+console.log(evenNumbers);
+```
+
+### ✅ Output
+
+```js
+[2, 4, 6, 8]
+```
+
+### 📌 Explanation
+
+- `filter()` loops through every element of the array
+- It checks the condition inside the callback function
+- If the condition returns `true`, the element is added to the new array
+- Here, `num % 2 === 0` checks whether the number is even
+
+---
+
+# 🚀 Why Use filter()?
+
+The `filter()` method helps developers:
+
+- Extract specific data from arrays
+- Write cleaner and shorter code
+- Avoid manual loops for filtering data
+- Work efficiently with API responses and datasets
 
 ---
 
