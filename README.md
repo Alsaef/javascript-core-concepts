@@ -235,6 +235,88 @@ The `filter()` method helps developers:
 
 ---
 
+# ⚡ Synchronous and Asynchronous JavaScript
+
+JavaScript can execute code in two different ways:
+
+- Synchronous Operation
+- Asynchronous Operation
+
+---
+
+# ⏳ Synchronous Operation
+
+In synchronous JavaScript, code runs line by line.
+One task must finish before the next task starts.
+
+```js
+console.log('first')
+console.log('second')
+console.log('third')
+```
+
+### ✅ Output
+
+```js
+first
+second
+third
+```
+
+---
+
+# 🚀 Asynchronous Operation
+
+In asynchronous JavaScript, some tasks do not block the execution flow.
+JavaScript does not wait for tasks like:
+
+- API Calls
+- Timers
+- Fetching Data
+
+```js
+function async() {
+    console.log('first')
+
+    setTimeout(() => {
+        console.log('second')
+    }, 1000) // 1000 milliseconds = 1 second
+
+    console.log('third')
+}
+
+async()
+```
+
+### ✅ Output
+
+```js
+first
+third
+second
+```
+
+### 📌 Explanation
+
+- `console.log('first')` runs immediately
+- `setTimeout()` is asynchronous, so JavaScript does not wait for it
+- JavaScript continues and prints `third`
+- After 1 second, `second` is printed
+
+---
+
+# 🔥 Why Asynchronous JavaScript is Important
+
+Asynchronous JavaScript helps developers:
+
+- Handle API requests efficiently
+- Improve application performance
+- Prevent blocking the main thread
+- Create smooth user experiences
+
+---
+
+
 # 🚀 Technologies Used
 
 - JavaScript
